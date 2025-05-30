@@ -42,7 +42,6 @@ npm start
 - 密码：123456
 
 ## 目录结构
-
 e:\game\Personalwebsite\
 ├── article.html      # 文章详情页
 ├── index.html        # 主页
@@ -56,4 +55,7 @@ e:\game\Personalwebsite\
 │   ├── db.js        # 数据库操作
 │   └── main.js      # 主要逻辑
 └── server\
-    └── server.js    # Express服务器
+    └── server.js    # Express服务器<br>
+  <em>演示</em>
+  ![Raw GitHub Image](https://raw.githubusercontent.com/ikun9527z/BlogSite/master/Demo.png)
+
