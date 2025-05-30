@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button onclick="window.location.href='/'" class="material-button">
+            <span class="material-icons">arrow_back</span>
+            返回首页
+        </button>
+    </header>
+
+    <main>
+        <article class="article-detail">
+            <div id="article-content"></div>
+        </article>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            
+            if (id) {
+                try {
+                    const response = await fetch(`/api/posts/${id}`);
+                    const article = await response.json();
+                    
+                    document.title = article.title;
+                    
+                    const content = document.getElementById('article-content');
+                    content.innerHTML = `
+                        <h1>${article.title}</h1>
+                        <div class="article-meta">
+                            <span class="category">${article.category}</span>
+                            <span class="date">${new Date(article.created_at).toLocaleDateString('zh-CN')}</span>
+                        </div>
+                        ${article.image ? `<img src="${article.image}" alt="${article.title}" class="article-image">` : ''}
+                        <div class="article-text">${article.content}</div>
+                    `;
+                } catch (error) {
+                    console.error('获取文章失败:', error);
+                    document.getElementById('article-content').innerHTML = '<p>文章加载失败</p>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

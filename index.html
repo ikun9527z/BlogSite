@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="page-layout">
+        <aside class="sidebar">
+            <h2>更新日志</h2>
+            <ul id="update-log" class="update-log"></ul>
+        </aside>
+        
+        <div class="main-content">
+            <header>
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="搜索文章...">
+                        <span class="material-icons">search</span>
+                    </div>
+                    <div class="category-filter">
+                        <select id="category-select">
+                            <option value="">所有分类</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="user-section">
+                    <button id="login-btn" class="material-button">
+                        <span class="material-icons">login</span>
+                        登录
+                    </button>
+                    <div id="user-info" style="display: none;">
+                        <span id="username-display"></span>
+                        <button id="logout-btn" class="material-button">
+                            <span class="material-icons">logout</span>
+                            注销
+                        </button>
+                    </div>
+                </div>
+                <button id="new-post" class="material-button" style="display: none;">
+                    <span class="material-icons">add</span>
+                    新建文章
+                </button>
+            </header>
+
+            <main>
+                <div id="posts-container"></div>
+            </main>
+        </div>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>编辑文章</h2>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="post-title" placeholder="文章标题">
+                <input type="text" id="post-category" placeholder="文章分类">
+                <div class="image-upload">
+                    <input type="file" id="post-image" accept="image/*">
+                    <div id="image-preview"></div>
+                </div>
+                <textarea id="post-content" placeholder="文章内容"></textarea>
+            </div>
+            <div class="button-group">
+                <button id="cancel-edit">取消</button>
+                <button id="save-post">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>登录</h2>
+            <input type="text" id="username" placeholder="用户名">
+            <input type="password" id="password" placeholder="密码">
+            <div class="button-group">
+                <button id="cancel-login">取消</button>
+                <button id="confirm-login">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Personal blog with embedded database",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.3",
+    "sqlite3": "^5.0.2",
+    "ws": "^8.18.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
