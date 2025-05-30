@@ -42,19 +42,19 @@ npm start
 - 密码：123456
 
 ## 目录结构
-e:\game\Personalwebsite\
-├── article.html      # 文章详情页
-├── index.html        # 主页
-├── package.json      # 项目配置
-├── README.md         # 项目说明
-├── database.sqlite   # SQLite数据库
-├── css\
-│   └── style.css    # 样式文件
-├── js\
-│   ├── config.js    # 配置文件
-│   ├── db.js        # 数据库操作
-│   └── main.js      # 主要逻辑
-└── server\
+e:\game\Personalwebsite\<br>
+├── article.html      # 文章详情页<br>
+├── index.html        # 主页<br>
+├── package.json      # 项目配置<br>
+├── README.md         # 项目说明<br>
+├── database.sqlite   # SQLite数据库<br>
+├── css\<br>
+│   └── style.css    # 样式文件<br>
+├── js\<br>
+│   ├── config.js    # 配置文件<br>
+│   ├── db.js        # 数据库操作<br>
+│   └── main.js      # 主要逻辑<br>
+└── server\<br>
     └── server.js    # Express服务器<br>
   <em>演示</em>
   ![Raw GitHub Image](https://raw.githubusercontent.com/ikun9527z/BlogSite/master/Demo.png)
