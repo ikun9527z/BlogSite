@@ -57,4 +57,4 @@ e:\game\Personalwebsite\
 └── server\
     └── server.js    # Express服务器
   演示
-  ![Raw GitHub Image](https://github.com/ikun9527z/BlogSite/edit/master/演示.png)
+  ![Raw GitHub Image](https://github.com/ikun9527z/BlogSite/edit/master/Demo.png)
