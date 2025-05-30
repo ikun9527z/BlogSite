@@ -42,20 +42,31 @@ npm start
 - 密码：123456
 
 ## 目录结构
-e:\game\Personalwebsite\<br>
-├── article.html      # 文章详情页<br>
-├── index.html        # 主页<br>
-├── package.json      # 项目配置<br>
-├── README.md         # 项目说明<br>
-├── database.sqlite   # SQLite数据库<br>
-├── css\<br>
-│   └── style.css    # 样式文件<br>
-├── js\<br>
-│   ├── config.js    # 配置文件<br>
-│   ├── db.js        # 数据库操作<br>
-│   └── main.js      # 主要逻辑<br>
-└── server\<br>
-    └── server.js    # Express服务器<br>
+```
+personalwebsite/
+├── public/                 # 静态资源文件
+│   ├── css/               # 样式文件
+│   ├── js/                # 客户端脚本
+│   └── uploads/           # 上传的图片
+├── routes/                # 路由文件
+│   ├── admin.js          # 管理后台路由
+│   ├── api.js            # API 接口路由
+│   └── index.js          # 前台页面路由
+├── views/                 # 视图模板
+│   ├── admin/            # 管理后台页面
+│   └── front/            # 前台页面
+├── models/               # 数据模型
+│   ├── article.js       # 文章模型
+│   └── user.js          # 用户模型
+├── middleware/          # 中间件
+│   ├── auth.js         # 认证中间件
+│   └── upload.js       # 文件上传中间件
+├── utils/              # 工具函数
+├── config.js           # 配置文件
+├── app.js             # 应用入口文件
+├── package.json       # 项目依赖
+└── README.md          # 项目说明
+```
   <em>演示</em>
   ![Raw GitHub Image](https://raw.githubusercontent.com/ikun9527z/BlogSite/master/Demo.png)
 
