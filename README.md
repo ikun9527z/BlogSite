@@ -56,5 +56,5 @@ e:\game\Personalwebsite\
 │   └── main.js      # 主要逻辑
 └── server\
     └── server.js    # Express服务器
-  演示
-  ![Raw GitHub Image](https://github.com/ikun9527z/BlogSite/edit/master/Demo.png)
+  <em>演示</em>
+  ![Raw GitHub Image](https://raw.githubusercontent.com/ikun9527z/BlogSite/edit/master/Demo.png)
